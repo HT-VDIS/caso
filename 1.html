@@ -4,19 +4,19 @@
 
 <h2></h2>
 
-<p id="demo"></p>
+<p id="parrafo"></p>
 
 <script>
 let text = '{"usuarios":[' +
-'{"nombre":"irving","apellido":"de la mora" },' +
-'{"nombre":"alejandro","apellido":"gonzalez" }]}';
+'{"nombre":"irving","apellido":"de la mora", "edad":33},' +
+'{"nombre":"alejandro","apellido":"gonzalez", "edad":33}]}';
 
 console.log()
-const obj = JSON.parse(text);
-document.getElementById("demo").innerHTML =
-obj.usuarios[1].nombre + " " + obj.usuarios[1].apellido;
+const usuarios = JSON.parse(text);
+document.getElementById("parrafo").innerHTML =
+usuarios.usuarios[0].nombre + " " + usuarios.usuarios[0].edad;
 
-console.log(obj)
+console.log(usuarios)
 </script>
 
 </body>
