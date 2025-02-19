@@ -2,19 +2,21 @@
 <html>
 <body>
 
-<h2>Create Object from JSON String</h2>
+<h2></h2>
 
 <p id="demo"></p>
 
 <script>
-let text = '{"employees":[' +
-'{"firstName":"John","lastName":"Doe" },' +
-'{"firstName":"Anna","lastName":"Smith" },' +
-'{"firstName":"Peter","lastName":"Jones" }]}';
+let text = '{"usuarios":[' +
+'{"nombre":"irving","apellido":"de la mora" },' +
+'{"nombre":"alejandro","apellido":"gonzalez" }]}';
 
+console.log()
 const obj = JSON.parse(text);
 document.getElementById("demo").innerHTML =
-obj.employees[1].firstName + " " + obj.employees[1].lastName;
+obj.usuarios[1].nombre + " " + obj.usuarios[1].apellido;
+
+console.log(obj)
 </script>
 
 </body>
