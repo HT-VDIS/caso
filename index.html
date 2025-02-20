@@ -22,12 +22,11 @@
 				<tr>
 					<th width="1%"></th>
 					<th width="7%" colspan="1" style="text-align:left;">Identificacion</th>
-					<th width="45%" colspan="3" style="text-align:left;">Usuario</th>
+					<th width="45%" colspan="4" style="text-align:left;">Usuario</th>
 					<th width="45%" colspan="1" style="text-align:left;">Observaciones</th>
 					<th width="1%" style="text-align:left;"></th>
 					<th width="1%" style="text-align:left;"></th>
 				</tr>
-				<form id="nuevo">
 				<tr>
 					<th id="new">+</th>
 					<th>
@@ -43,22 +42,20 @@
 						<input type="text" id="nom" name="nom" autocomplete="off" maxlength="25" size="15" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"{1,} placeholder="Nombre" required style="width: -webkit-fill-available;"></input>
 					</th>
 					<th>
+						<input type="text" id="eda" name="eda" autocomplete="off" maxlength="3" size="3" pattern="[0-9]{10}" placeholder="Edad" required style="width: -webkit-fill-available;" ></input>
+					</th>
+					<th>
 						<input type="text" id="obs" name="obs" autocomplete="off" maxlength="100" placeholder="" title="100 caracteres maximo" style="width: -webkit-fill-available;"></input>
 					</th>
 					<th>
-						<input type="submit" value="Guardar" onclick="agregar_registro()">
-					</th>
-					<th>
-						<input type="reset" value="Cancelar" style="margin-left: 0px;">
+						<button onclick="agregar_registro()">Agregar</button>
 					</th>
 				</tr>
-				</form>
 				</thead>
-				<tbody id="lista"></tbody>
+				<tbody id="lista">
+					
+				</tbody>
 			</table>
 		</div>
 	</body>
-	<script>
-
-	</script>
 </html>
