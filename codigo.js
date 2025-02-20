@@ -29,6 +29,7 @@ function crear_json(){
     var eljason = {
         'usuarios' :[]
     };
+
     for (var i = 0; i < usuarios.length; i++) {
         eljason.usuarios.push({
             "identificacion": usuarios[i]['identificacion'],
@@ -39,19 +40,43 @@ function crear_json(){
             "observaciones": usuarios[i]['observaciones']
       });
     };
-    // Convertir el objeto JSON a una cadena
+
     const archivo = JSON.stringify(eljason);
-    // Crear un blob con los datos JSON
     const blob = new Blob([archivo], { type: "application/json" });
-    // Crear un enlace para descargar el archivo
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
     a.download = "usuarios.json";
-    // Simular un clic en el enlace para iniciar la descarga
     document.body.appendChild(a);
     a.click();
-    // Eliminar el enlace del DOM
+    document.body.removeChild(a);
+}
+
+function crear_csv(){
+
+    var eljason = {
+        'usuarios' :[]
+    };
+    
+    for (var i = 0; i < usuarios.length; i++) {
+        eljason.usuarios.push({
+            "identificacion": usuarios[i]['identificacion'],
+            "apellido_paterno": usuarios[i]['apellido_paterno'],
+            "apellido_materno": usuarios[i]['apellido_materno'],
+            "nombre": usuarios[i]['nombre'],
+            "edad": usuarios[i]['edad'],
+            "observaciones": usuarios[i]['observaciones']
+      });
+    };
+
+    const archivo = JSON.stringify(eljason);
+    const blob = new Blob([archivo], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "usuarios.json";
+    document.body.appendChild(a);
+    a.click();
     document.body.removeChild(a);
 }
 
