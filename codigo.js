@@ -12,7 +12,6 @@ function agregar_registro(){
     };
 
     usuarios[usuarios.length] = registro;
-    console.log(JSON.stringify(registro));
 
     document.getElementById("ide").value = null;
     document.getElementById("apa").value = null;
@@ -20,8 +19,9 @@ function agregar_registro(){
     document.getElementById("nom").value = null;
     document.getElementById("eda").value = null;
     document.getElementById("obs").value = null;
+    document.getElementById("ide").focus();
 
-    console.log(registro);
+    
 }
 
 function crear_json(){
