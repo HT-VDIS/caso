@@ -11,38 +11,35 @@
 			<table>
 				<tr>
 					<td width="max">
-						<h1>titulo</h1>
+						<h1>Registro de Usuarios</h1>
 					</td>
 				</tr>
 			</table>	
 		</div><!-- ENCABEZADO -->
 		<div id="tabla">				
-			<table width="100%">
+			<table id="registros" width="100%">
 				<thead>
 				<tr>
-					<th width="1%"></th>
 					<th width="1%" colspan="1" style="text-align:left;">ID</th>
 					<th width="45%" colspan="4" style="text-align:left;">Usuario</th>
 					<th width="45%" colspan="1" style="text-align:left;">Observaciones</th>
 					<th width="1%" style="text-align:left;"></th>
-					<th width="1%" style="text-align:left;"></th>
 				</tr>
 				<tr>
-					<th>+</th>
 					<th>
-						<input type="text" id="ide" name="ide" autocomplete="off" maxlength="4" size="4" pattern="[0-9]{10}" placeholder="0000" autofocus style="width: -webkit-fill-available;" ></input>
+						<input type="text" id="ide" name="ide" autocomplete="off" maxlength="4" size="4" placeholder="0000" autofocus style="width: -webkit-fill-available;" ></input>
 					</th>
 					<th>
-						<input type="text" id="apa" name="apa" autocomplete="off" maxlength="25" size="15" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"{1,} placeholder="Apellido paterno" style="width: -webkit-fill-available;"></input>
+						<input type="text" id="apa" name="apa" autocomplete="off" maxlength="25" size="15" placeholder="Apellido paterno" style="width: -webkit-fill-available;"></input>
 					</th>
 					<th>
-						<input type="text" id="ama" name="ama" autocomplete="off" maxlength="25" size="15" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"{1,} placeholder="Apellido materno" style="width: -webkit-fill-available;"></input>
+						<input type="text" id="ama" name="ama" autocomplete="off" maxlength="25" size="15" placeholder="Apellido materno" style="width: -webkit-fill-available;"></input>
 					</th>
 					<th>
-						<input type="text" id="nom" name="nom" autocomplete="off" maxlength="25" size="15" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"{1,} placeholder="Nombre" style="width: -webkit-fill-available;"></input>
+						<input type="text" id="nom" name="nom" autocomplete="off" maxlength="25" size="15" placeholder="Nombre" style="width: -webkit-fill-available;"></input>
 					</th>
 					<th>
-						<input type="text" id="eda" name="eda" autocomplete="off" maxlength="3" size="3" pattern="[0-9]{10}" placeholder="Edad" style="width: -webkit-fill-available;" ></input>
+						<input type="text" id="eda" name="eda" autocomplete="off" maxlength="3" size="3" placeholder="Edad" style="width: -webkit-fill-available;" ></input>
 					</th>
 					<th>
 						<input type="text" id="obs" name="obs" autocomplete="off" maxlength="100" placeholder="" title="100 caracteres maximo" style="width: -webkit-fill-available;"></input>
@@ -53,8 +50,10 @@
 				</tr>
 				</thead>
 				<tbody id="lista"></tbody>
-				<button onclick="crear_json()">json</button>
-                <button onclick="crear_csv()">csv</button>
+                <tfoot>
+                    <th colspan="7" style="text-align: end;">Exportar como: <button onclick="crear_json()">JSON</button> <button onclick="crear_csv()">CSV</button></th>
+                </tfoot>
+
 			</table>
 		</div>
 	</body>

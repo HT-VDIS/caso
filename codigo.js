@@ -21,7 +21,32 @@ function agregar_registro(){
     document.getElementById("obs").value = null;
     document.getElementById("ide").focus();
 
-    
+    console.log(usuarios);
+    document.getElementById("lista").innerHTML = null;
+    const tbody = document.querySelector("#lista");
+
+    usuarios.forEach(persona => {
+        const fila = document.createElement("tr");
+        const celdaide = document.createElement("td");
+        celdaide.textContent = persona.identificacion;
+        fila.appendChild(celdaide);
+        const celdaapa = document.createElement("td");
+        celdaapa.textContent = persona.apellido_paterno;
+        fila.appendChild(celdaapa);
+        const celdaama = document.createElement("td");
+        celdaama.textContent = persona.apellido_materno;
+        fila.appendChild(celdaama);
+        const celdanom = document.createElement("td");
+        celdanom.textContent = persona.nombre;
+        fila.appendChild(celdanom);
+        const celdaeda = document.createElement("td");
+        celdaeda.textContent = persona.edad;
+        fila.appendChild(celdaeda);
+        const celdaobs = document.createElement("td");
+        celdaobs.textContent = persona.observaciones;
+        fila.appendChild(celdaobs);
+        tbody.appendChild(fila); 
+    });
 }
 
 function crear_json(){
