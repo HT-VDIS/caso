@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div>
-			<table>
+			<table class="titulo">
 				<tr>
 					<td width="max">
 						<h1>Registro de Usuarios</h1>
@@ -20,10 +20,11 @@
 			<table id="registros" width="100%">
 				<thead>
 				<tr>
-					<th width="1%" colspan="1" style="text-align:left;">ID</th>
-					<th width="45%" colspan="4" style="text-align:left;">Usuario</th>
-					<th width="45%" colspan="1" style="text-align:left;">Observaciones</th>
-					<th width="1%" style="text-align:left;"></th>
+					<th class="titulos" width="1%" colspan="1" style="text-align:left;">ID</th>
+					<th class="titulos" width="45%" colspan="3" style="text-align:left;">Usuario</th>
+                    <th class="titulos" width="5%" colspan="1" style="text-align:left;">Edad</th>
+					<th class="titulos" width="45%" colspan="1" style="text-align:left;">Observaciones</th>
+					<th class="titulos" width="1%" style="text-align:left;"></th>
 				</tr>
 				<tr>
 					<th>
@@ -36,10 +37,10 @@
 						<input type="text" id="ama" name="ama" autocomplete="off" maxlength="25" size="15" placeholder="Apellido materno" style="width: -webkit-fill-available;"></input>
 					</th>
 					<th>
-						<input type="text" id="nom" name="nom" autocomplete="off" maxlength="25" size="15" placeholder="Nombre" style="width: -webkit-fill-available;"></input>
+						<input type="text" id="nom" name="nom" autocomplete="off" maxlength="25" size="3" placeholder="Nombre" style="width: -webkit-fill-available;"></input>
 					</th>
 					<th>
-						<input type="text" id="eda" name="eda" autocomplete="off" maxlength="3" size="3" placeholder="Edad" style="width: -webkit-fill-available;" ></input>
+						<input type="text" id="eda" name="eda" autocomplete="off" maxlength="3" size="3" placeholder="Años" style="width: -webkit-fill-available;" ></input>
 					</th>
 					<th>
 						<input type="text" id="obs" name="obs" autocomplete="off" maxlength="100" placeholder="" title="100 caracteres maximo" style="width: -webkit-fill-available;"></input>

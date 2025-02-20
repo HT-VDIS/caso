@@ -1,0 +1,79 @@
+body{
+	user-select: none;
+	font: normal normal normal 14px/1.5 'trebuchet ms' , trebuchet ms;
+	line-height: 22px;
+	background-color: #323232;
+	margin: 4px;
+	text-align: left;
+}
+table{
+    background-color: rgba(75,75,75,1);
+    color: rgba(255,255,255,.75);
+    border-radius: 6px;
+    padding: 1px;
+    border-width: 4px;
+    margin: 0px;
+}
+table.titulo{
+    border-collapse: collapse;
+}
+table.titulo tr{
+    background-color: #323232;
+}
+table tbody{
+    color: rgba(255,255,255,.75);
+    border-collapse: collapse;
+    border-radius: 6px;
+    margin: 0px;
+}
+th.titulos{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    margin: 0px;
+}
+tbody td{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0px;
+}
+button{
+    background-color: rgba(60,60,60,1);
+    border-color: rgba(60,60,60,1);
+    color: rgba(255,255,255,.75);
+    border-style: solid;
+    width: 66px;
+    height: 26px;
+    border-radius: 4px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}
+button:hover{
+    background-color: rgba(75,75,75,1);
+    border-color: rgba(60,60,60,1);
+    color: rgba(255,255,255,1);
+    border-style: solid;
+}
+button:active{
+    background-color: #323232;
+    border-color: rgba(75,75,75,1);
+    color: rgba(255,255,255,.50);
+}
+input {
+    height: 22px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgba(60,60,60,1);
+    color: rgba(255,255,255,.75);
+    border-color: rgba(60,60,60,1);
+    border-style: solid;
+    border-radius: 4px;
+    font: normal normal normal 14px/1.5 'trebuchet ms' , trebuchet ms;
+    margin: 0px;
+}
