@@ -21,7 +21,7 @@
 				<thead>
 				<tr>
 					<th width="1%"></th>
-					<th width="7%" colspan="1" style="text-align:left;">Identificacion</th>
+					<th width="1%" colspan="1" style="text-align:left;">ID</th>
 					<th width="45%" colspan="4" style="text-align:left;">Usuario</th>
 					<th width="45%" colspan="1" style="text-align:left;">Observaciones</th>
 					<th width="1%" style="text-align:left;"></th>
@@ -30,7 +30,7 @@
 				<tr>
 					<th id="new">+</th>
 					<th>
-						<input type="text" id="ide" name="ide" autocomplete="off" maxlength="10" size="10" pattern="[0-9]{10}" title="10 Digitos" placeholder="0000000000" autofocus required style="width: -webkit-fill-available;" ></input>
+						<input type="text" id="ide" name="ide" autocomplete="off" maxlength="4" size="4" pattern="[0-9]{10}" placeholder="000" autofocus required style="width: -webkit-fill-available;" ></input>
 					</th>
 					<th>
 						<input type="text" id="apa" name="apa" autocomplete="off" maxlength="25" size="15" pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"{1,} placeholder="Apellido paterno" required style="width: -webkit-fill-available;"></input>
@@ -53,8 +53,10 @@
 				</tr>
 				</thead>
 				<tbody id="lista">
-					
+					<button onclick="crear_json()">json</button>
+					<button onclick="test()">test</button>
 				</tbody>
+				<span id="res"></span>
 			</table>
 		</div>
 	</body>
