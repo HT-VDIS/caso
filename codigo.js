@@ -51,11 +51,11 @@ function crear_json(){
     document.body.removeChild(a);
 }
 
-function arrayObjToCsv(ar) {
+function arrayAcsv(ar) {
 	//comprobamos compatibilidad
 	if(window.Blob && (window.URL || window.webkitURL)){
 		var contenido = "",
-			d = new Date(),
+			//d = new Date(),
 			blob,
 			reader,
 			save,
@@ -107,5 +107,5 @@ function arrayObjToCsv(ar) {
 };
 
 function crear_csv() {
-	arrayObjToCsv(usuarios);
+	arrayAcsv(usuarios);
 }
