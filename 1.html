@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <body>
-
-<h2></h2>
-
-<p id="parrafo"></p>
-
-<script>
-let text = '{"usuarios":[' +
-'{"nombre":"irving","apellido":"de la mora", "edad":33},' +
-'{"nombre":"alejandro","apellido":"gonzalez", "edad":33}]}';
-
-console.log()
-const usuarios = JSON.parse(text);
-document.getElementById("parrafo").innerHTML =
-usuarios.usuarios[0].nombre + " " + usuarios.usuarios[0].edad;
-
-console.log(usuarios)
-</script>
-
+    <h2></h2>
+    <p id="parrafo"></p>
 </body>
+<script>
+    let text = '{"usuarios":[' +
+    '{"nombre":"irving","apellido":"de la mora", "edad":33},' +
+    '{"nombre":"alejandro","apellido":"gonzalez", "edad":33}]}';
+
+    const usuarios = JSON.parse(text);
+    document.getElementById("parrafo").innerHTML =
+    usuarios.usuarios[0].nombre + " " + usuarios.usuarios[0].edad;
+
+    console.log(usuarios)
+
+    const myObj = {"name":"John", "age":30, "car":null};
+    document.getElementById("demo").innerHTML = myObj.name;
+</script>
 </html>
